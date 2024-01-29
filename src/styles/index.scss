@@ -1,0 +1,248 @@
+@import url("normalize.scss");
+@import url("animation.scss");
+
+.pages {
+  height: 615px;
+  background: #fff;
+  display: flex;
+
+  .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    padding: 0 10%;
+
+    & > div {
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+    .left {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      .img-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        position: relative;
+        & > img {
+          max-height: 500px;
+          position: relative;
+          bottom: 0;
+
+          &.animation {
+            animation: phoneBottom 1.5s linear;
+          }
+
+          &.file {
+            position: absolute;
+            left: -30px;
+            bottom: 50px;
+            animation: fileAnimation 3s linear;
+          }
+
+          &.bar {
+            position: absolute;
+          }
+
+          &.left-bar {
+            left: -30px;
+          }
+
+          &.right-bar {
+            right: -30px;
+          }
+
+          &.fit {
+            position: absolute;
+          }
+
+          &.fit-1 {
+            z-index: 10;
+            left: 70px;
+            bottom: 30px;
+            animation: fit1 .5s linear;
+          }
+
+          &.fit-2 {
+            z-index: 50;
+            left: 45px;
+            bottom: 5px;
+            animation: fit2 .7s linear;
+          }
+
+          &.fit-3 {
+            z-index: 100;
+            left: 35px;
+            bottom: 0;
+            animation: fit3 .9s linear;
+          }
+        }
+        .signature,
+        .complated {
+          position: absolute;
+          width: 200px;
+          animation: opacityImg 3s linear;
+        }
+        .signature {
+          max-height: 120px;
+          left: -25%;
+          top: 50%;
+
+          img {
+            max-height: 120px;
+          }
+        }
+        .complated {
+          max-height: 160px;
+          left: 75%;
+          top: 40%;
+
+          img {
+            max-height: 160px;
+          }
+        }
+      }
+    }
+
+    .right {
+      justify-content: flex-end;
+      .title,
+      .desc,
+      .text {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 7px 0 7px 25%;
+        text-align: right;
+      }
+      .title {
+        color: #0381ff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      button {
+        border: 1px solid #9c9c9c;
+        background: transparent;
+        margin-top: 30px;
+        padding: 7px 15px;
+      }
+    }
+  }
+}
+
+.button-group {
+  height: 100px;
+  background: #fff;
+  overflow: hidden;
+
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    background: #f9f9f9;
+
+    li {
+      display: flex;
+      height: 100px;
+      flex: 1;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid #0381ff;
+      }
+
+      &.active {
+        background: rgba(3, 129, 255, 0.03);
+
+        a {
+          .icon {
+            svg {
+              * {
+                fill: #0381ff;
+              }
+            }
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: #0b172a;
+        font-size: 15px;
+        font-weight: 600;
+
+        &:hover {
+          background: rgba(3, 129, 255, 0.03);
+          text-decoration: none;
+
+          .icon {
+            svg {
+              * {
+                fill: #0381ff;
+              }
+            }
+          }
+        }
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          background: #fff;
+          border-radius: 100%;
+          margin-right: 7px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          &.export-share {
+            svg {
+              width: 25px;
+              height: 25px;
+            }
+          }
+
+          &.buttonCricle::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #0381ff;
+            border-radius: 100%;
+            left: 0;
+            top: 0;
+            animation: buttonCricle 0.9s linear;
+          }
+
+          svg {
+            width: 32px;
+            height: 32px;
+
+            * {
+              fill: #666666;
+            }
+          }
+        }
+      }
+    }
+  }
+}
