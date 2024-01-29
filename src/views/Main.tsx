@@ -68,7 +68,7 @@ function Main() {
   return (
     <Container>
       <Row className="align-items-center min-vh-100">
-        <Row className="w-100 flex-column">
+        <Row className="w-100 flex-column body-row">
           <Col>
             <Row className="pages">
               <Pages page={page} setPage={setPage} />

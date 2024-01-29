@@ -19,17 +19,17 @@ https://drive.google.com/drive/folders/1kkicvHG7UMc-MY9npv_fy4gW1cZF3QiO?usp=dri
 ## Start development server
 
 ```sh
-npm run dev
+yarn run dev
 ```
 
 ## Lint the code
 
 ```sh
-npm run lint
+yarn run lint
 ```
 
 ## Format the code
 
 ```sh
-npm run format
+yarn run format
 ```
