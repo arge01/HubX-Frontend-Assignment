@@ -305,6 +305,10 @@
 
       &:hover {
         border: 1px solid #0381ff;
+
+        @include breakpoint-x-tablet() {
+          border: 1px solid transparent;
+        }
       }
 
       &.active {
