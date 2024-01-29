@@ -146,7 +146,7 @@
             animation: fit1 0.5s linear;
 
             @include breakpoint-x-tablet() {
-              bottom: -15px;
+              width: calc(85% - 20% - 55px);
             }
           }
 
@@ -157,7 +157,7 @@
             animation: fit2 0.7s linear;
 
             @include breakpoint-x-tablet() {
-              bottom: 0;
+              width: calc(85% - 20% - 15px);
             }
           }
 
@@ -168,7 +168,7 @@
             animation: fit3 0.9s linear;
 
             @include breakpoint-x-tablet() {
-              bottom: 0;
+              width: calc(85% - 20%);
             }
           }
         }
