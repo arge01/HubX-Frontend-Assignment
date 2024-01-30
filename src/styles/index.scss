@@ -184,7 +184,7 @@
           top: 50%;
 
           @include breakpoint-x-tablet() {
-            max-height: 50px;
+            max-height: inherit;
             position: absolute;
             left: 0;
             z-index: 10;
@@ -198,9 +198,10 @@
             max-height: 120px;
 
             @include breakpoint-x-tablet() {
-              max-height: 50px;
-              right: 35%;
+              max-height: inherit;
+              left: -30%;
               position: relative;
+              width: 35%;
             }
           }
         }
@@ -210,7 +211,7 @@
           top: 40%;
 
           @include breakpoint-x-tablet() {
-            max-height: 70px;
+            max-height: inherit;
             position: absolute;
             left: 0;
             z-index: 10;
@@ -224,9 +225,10 @@
             max-height: 160px;
 
             @include breakpoint-x-tablet() {
-              max-height: 70px;
-              right: -35%;
+              max-height: inherit;
+              right: -30%;
               position: relative;
+              width: 35%;
             }
           }
         }
