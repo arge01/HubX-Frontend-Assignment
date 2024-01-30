@@ -16,7 +16,7 @@ function ButtonGroup({ page, setPage }: Props) {
             href="#"
           >
             <span
-              className={`icon ${v?.icon} ${v?.page === page && 'buttonCricle'}`}
+              className={`icon ${v?.icon} ${v?.page === page && 'button-cricle'}`}
             >
               <ButtonIcon icon={v?.icon} />
             </span>

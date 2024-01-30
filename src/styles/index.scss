@@ -82,14 +82,14 @@
           }
 
           &.animation {
-            animation: phoneBottom 1.5s linear;
+            animation: phone-bottom 1.5s linear;
           }
 
           &.file {
             position: absolute;
             left: -30px;
             bottom: 50px;
-            animation: fileAnimation 3s linear;
+            animation: file-animation 3s linear;
             z-index: 100;
 
             @include breakpoint-x-tablet() {
@@ -176,7 +176,7 @@
         .complated {
           position: absolute;
           width: 200px;
-          animation: opacityImg 3s linear;
+          animation: opacity-img 3s linear;
         }
         .signature {
           max-height: 120px;
@@ -367,7 +367,7 @@
             }
           }
 
-          &.buttonCricle::after {
+          &.button-cricle::after {
             content: "";
             position: absolute;
             width: 40px;
@@ -377,7 +377,7 @@
             border-radius: 100%;
             left: 0;
             top: 0;
-            animation: buttonCricle 0.9s linear;
+            animation: button-cricle 0.9s linear;
           }
 
           svg {
