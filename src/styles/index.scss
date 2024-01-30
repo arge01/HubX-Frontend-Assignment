@@ -143,7 +143,7 @@
             z-index: 10;
             left: 70px;
             bottom: 30px;
-            animation: fit1 0.5s linear;
+            animation: fit1 1s cubic-bezier(0.99, -0.01, 0, 1);
 
             @include breakpoint-x-tablet() {
               width: calc(85% - 20% - 55px);
@@ -154,7 +154,7 @@
             z-index: 50;
             left: 45px;
             bottom: 5px;
-            animation: fit2 0.7s linear;
+            animation: fit2 1.5s cubic-bezier(0.99, -0.01, 0, 1);
 
             @include breakpoint-x-tablet() {
               width: calc(85% - 20% - 15px);
@@ -165,7 +165,7 @@
             z-index: 100;
             left: 35px;
             bottom: 0;
-            animation: fit3 0.9s linear;
+            animation: fit3 2s cubic-bezier(0.99, -0.01, 0, 1);
 
             @include breakpoint-x-tablet() {
               width: calc(85% - 20%);

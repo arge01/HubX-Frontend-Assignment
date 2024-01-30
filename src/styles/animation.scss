@@ -56,36 +56,45 @@
 
 @keyframes fit1 {
   0% {
+    transform: scale(.01);
     bottom: -100%;
   }
   50% {
+    transform: scale(.02);
     bottom: -50%;
   }
   100% {
+    transform: scale(1);
     bottom: 30px;
   }
 }
 
 @keyframes fit2 {
   0% {
+    transform: scale(.01);
     bottom: -100%;
   }
   50% {
-    bottom: -50%;
+    transform: scale(.02);
+    bottom: -75%;
   }
   100% {
+    transform: scale(1);
     bottom: 5px;
   }
 }
 
 @keyframes fit3 {
   0% {
+    transform: scale(.01);
     bottom: -100%;
   }
   50% {
-    bottom: -50%;
+    transform: scale(.02);
+    bottom: -100%;
   }
   100% {
+    transform: scale(1);
     bottom: 0;
   }
 }
