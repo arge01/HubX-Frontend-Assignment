@@ -1,17 +1,17 @@
 @keyframes button-cricle {
   0% {
-      border-radius: 0;
-      transform: rotate(0deg);
+    border-radius: 0;
+    transform: rotate(0deg);
   }
 
   50% {
-      border-radius: 50%;
-      transform: rotate(90deg);
+    border-radius: 50%;
+    transform: rotate(90deg);
   }
 
   100% {
-      border-radius: 100%;
-      transform: rotate(360deg);
+    border-radius: 100%;
+    transform: rotate(360deg);
   }
 }
 
@@ -27,18 +27,111 @@
   }
 }
 
-@keyframes file-animation {
+@keyframes file-animation-txt {
   0% {
     bottom: -100%;
+    right: 100%;
     transform: scale(1.5) skew(5deg);
   }
   50% {
     bottom: -50%;
+    right: 50%;
     transform: scale(2) skew(2deg);
   }
   100% {
     bottom: 50px;
-    transform: scale(1) skew(1);
+    right: 5%;
+    transform: scale(1) skew(0deg);
+  }
+}
+
+@keyframes file-animation-txt-mobile {
+  0% {
+    bottom: -100%;
+    right: 100%;
+    transform: scale(1.5) skew(5deg);
+  }
+  50% {
+    bottom: -50%;
+    right: 50%;
+    transform: scale(2) skew(2deg);
+  }
+  100% {
+    bottom: 50px;
+    right: -5%;
+    transform: scale(1) skew(0deg);
+  }
+}
+
+@keyframes file-animation-jpg {
+  0% {
+    bottom: -100%;
+    right: 100%;
+    transform: scale(1.5) skew(5deg);
+  }
+  50% {
+    bottom: -50%;
+    right: 50%;
+    transform: scale(2) skew(2deg);
+  }
+  100% {
+    bottom: 100px;
+    right: 200px;
+    transform: scale(1) skew(0deg);
+  }
+}
+
+@keyframes file-animation-jpg-mobile {
+  0% {
+    bottom: -100%;
+    right: 100%;
+    transform: scale(1.5) skew(5deg);
+  }
+  50% {
+    bottom: -50%;
+    right: 50%;
+    transform: scale(2) skew(2deg);
+  }
+  100% {
+    bottom: 100px;
+    right: 25%;
+    transform: scale(1) skew(0deg);
+  }
+}
+
+@keyframes file-animation-pdf {
+  0% {
+    bottom: -100%;
+    right: 100%;
+    transform: scale(1.5) skew(5deg);
+  }
+  50% {
+    bottom: -50%;
+    right: 50%;
+    transform: scale(2) skew(2deg);
+  }
+  100% {
+    bottom: 50px;
+    right: 75%;
+    transform: scale(1) skew(0deg);
+  }
+}
+
+@keyframes file-animation-pdf-mobile {
+  0% {
+    bottom: -100%;
+    right: 100%;
+    transform: scale(1.5) skew(5deg);
+  }
+  50% {
+    bottom: -50%;
+    right: 50%;
+    transform: scale(2) skew(2deg);
+  }
+  100% {
+    bottom: 50px;
+    right: 55%;
+    transform: scale(1) skew(0deg);
   }
 }
 
@@ -56,11 +149,11 @@
 
 @keyframes fit1 {
   0% {
-    transform: scale(.01);
+    transform: scale(0.01);
     bottom: -100%;
   }
   50% {
-    transform: scale(.02);
+    transform: scale(0.02);
     bottom: -50%;
   }
   100% {
@@ -71,11 +164,11 @@
 
 @keyframes fit2 {
   0% {
-    transform: scale(.01);
+    transform: scale(0.01);
     bottom: -100%;
   }
   50% {
-    transform: scale(.02);
+    transform: scale(0.02);
     bottom: -75%;
   }
   100% {
@@ -86,11 +179,11 @@
 
 @keyframes fit3 {
   0% {
-    transform: scale(.01);
+    transform: scale(0.01);
     bottom: -100%;
   }
   50% {
-    transform: scale(.02);
+    transform: scale(0.02);
     bottom: -100%;
   }
   100% {

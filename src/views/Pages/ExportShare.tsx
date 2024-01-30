@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 
 import phone from '../../images/export.png';
 
-import file from '../../images/files.png';
+import txt from "../../images/txt.png";
+import jpg from "../../images/jpg.png";
+import pdf from "../../images/pdf.png";
 
 function ExportShare() {
   const [active, setactive] = useState<boolean>(false);
@@ -16,7 +18,9 @@ function ExportShare() {
           <img className="animation" src={phone} alt="Export Share" />
           {active && (
             <>
-              <img className="file" src={file} />
+              <img className="file txt" src={txt} />
+              <img className="file jpg" src={jpg} />
+              <img className="file pdf" src={pdf} />
             </>
           )}
         </div>

@@ -86,17 +86,61 @@
           }
 
           &.file {
-            position: absolute;
-            left: -30px;
-            bottom: 50px;
-            animation: file-animation 3s linear;
-            z-index: 100;
-
-            @include breakpoint-x-tablet() {
-              max-height: inherit;
-              left: inherit;
+            &.txt {
+              position: absolute;
+              bottom: 50px;
+              animation: file-animation-txt 1s cubic-bezier(0.56, 1.01, 1, 1);
               z-index: 100;
-              width: 100%;
+              width: 175px;
+              right: 5%;
+
+              @include breakpoint-x-tablet() {
+                position: absolute;
+                bottom: 50px;
+                animation: file-animation-txt-mobile 1s cubic-bezier(0.56, 1.01, 1, 1);
+                z-index: 100;
+                width: 50%;
+                right: -5%;
+                z-index: 30;
+              }
+            }
+
+            &.jpg {
+              position: absolute;
+              bottom: 100px;
+              animation: file-animation-jpg 1.5s cubic-bezier(0.56, 1.01, 1, 1);
+              z-index: 100;
+              width: 150px;
+              right: 200px;
+
+              @include breakpoint-x-tablet() {
+                position: absolute;
+                bottom: 100px;
+                animation: file-animation-jpg-mobile 1.5s cubic-bezier(0.56, 1.01, 1, 1);
+                z-index: 100;
+                width: 50%;
+                right: 25%;
+                z-index: 10;
+              }
+            }
+
+            &.pdf {
+              position: absolute;
+              bottom: 50px;
+              animation: file-animation-pdf 2s cubic-bezier(0.56, 1.01, 1, 1);
+              z-index: 100;
+              width: 175px;
+              right: 75%;
+
+              @include breakpoint-x-tablet() {
+                position: absolute;
+                bottom: 50px;
+                animation: file-animation-pdf-mobile 2s cubic-bezier(0.56, 1.01, 1, 1);
+                z-index: 100;
+                width: 50%;
+                right: 55%;
+                z-index: 30;
+              }
             }
           }
 
